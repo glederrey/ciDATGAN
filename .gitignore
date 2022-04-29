@@ -131,3 +131,5 @@ dmypy.json
 # My own
 .idea
 data/LTDS
+data/nomis_tmp
+notebooks/data/tmp.txt
