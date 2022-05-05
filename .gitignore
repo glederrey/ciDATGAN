@@ -138,4 +138,5 @@ notebooks/data/tmp.txt
 notebooks/output
 # too big
 data/synthetic
-
+# pickle files
+notebooks/testing/results
