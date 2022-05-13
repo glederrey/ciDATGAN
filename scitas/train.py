@@ -162,7 +162,7 @@ def train(args):
     for i in range(5):
         if ci:
             samp = datgan.sample(len(lpmc), inputs=lpmc[datgan.conditional_inputs])
-            samp.to_csv(synth_folder + 'DATGAN_{}_{}.csv'.format(args.number, i + 1), index=False)
+            samp.to_csv(synth_folder + 'ciDATGAN_{}_{}.csv'.format(args.number, i + 1), index=False)
         else:
             samp = datgan.sample(len(lpmc))
             samp.to_csv(synth_folder + 'DATGAN_{}_{}.csv'.format(args.number, i + 1), index=False)
