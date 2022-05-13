@@ -6,8 +6,8 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu
-#SBATCH --mem=32G
 #SBATCH --gres=gpu:1
+#SBATCH --mem=32G
 #SBATCH --time=03:00:00
 #SBATCH --account=transpor
 
