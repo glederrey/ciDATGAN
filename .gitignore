@@ -136,6 +136,7 @@ data/nomis
 notebooks/data/tmp.txt
 # Outputs of DATGAN model
 notebooks/output
+scitas/output
 # too big
 data/synthetic
 # pickle files

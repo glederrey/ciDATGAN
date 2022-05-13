@@ -152,6 +152,21 @@ def train(args):
 
     datgan.fit(df, data_info, graph, encoded_data_folder)
 
+    # Load the normal lpmc data
+    lpmc = pd.read_csv('../data/LPMC/trips.csv')
+
+    synth_folder = '../data/synthetic/{}/'.format(folder)
+    if not os.path.exists(synth_folder):
+        os.makedirs(synth_folder)
+
+    for i in range(5):
+        if ci:
+            samp = datgan.sample(len(lpmc), inputs=lpmc[datgan.conditional_inputs])
+            samp.to_csv(synth_folder + 'DATGAN_{}_{}.csv'.format(args.number, i + 1), index=False)
+        else:
+            samp = datgan.sample(len(lpmc))
+            samp.to_csv(synth_folder + 'DATGAN_{}_{}.csv'.format(args.number, i + 1), index=False)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
