@@ -138,6 +138,6 @@ notebooks/data/tmp.txt
 notebooks/output
 scitas/output
 # too big
-data/synthetic
+#data/synthetic
 # pickle files
 notebooks/testing/results
