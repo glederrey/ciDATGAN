@@ -133,6 +133,7 @@ dmypy.json
 data/LTDS
 data/nomis_tmp
 data/nomis
+data/synthetic/nomis
 notebooks/data/tmp.txt
 # Outputs of DATGAN model
 notebooks/output
